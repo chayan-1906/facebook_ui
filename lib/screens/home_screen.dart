@@ -1,10 +1,12 @@
 import 'package:facebook_ui/config/palette.dart';
 import 'package:facebook_ui/data/data.dart';
+import 'package:facebook_ui/models/post_model.dart';
 import 'package:facebook_ui/widgets/circle_button.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../widgets/create_post_container.dart';
+import '../widgets/post_container.dart';
 import '../widgets/rooms.dart';
 import '../widgets/stories.dart';
 
@@ -68,6 +70,15 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 5.0),
             sliver: SliverToBoxAdapter(
               child: Stories(currentUser: currentUser, stories: stories),
+            ),
+          ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                final Post post = posts[index];
+                return PostContainer(post: post);
+              },
+              childCount: posts.length,
             ),
           ),
         ],
