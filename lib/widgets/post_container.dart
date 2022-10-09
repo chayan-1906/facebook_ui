@@ -3,6 +3,7 @@ import 'package:facebook_ui/models/post_model.dart';
 import 'package:flutter/material.dart';
 
 import 'post_header.dart';
+import 'post_stats.dart';
 
 class PostContainer extends StatelessWidget {
   final Post post;
@@ -36,7 +37,11 @@ class PostContainer extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: CachedNetworkImage(imageUrl: post.imageUrl),
                 )
-              : const SizedBox.shrink()
+              : const SizedBox.shrink(),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            child: PostStats(post: post),
+          ),
         ],
       ),
     );

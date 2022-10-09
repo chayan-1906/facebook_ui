@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:facebook_ui/config/palette.dart';
 import 'package:facebook_ui/models/story_model.dart';
