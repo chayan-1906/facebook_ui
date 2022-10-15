@@ -1,16 +1,15 @@
-# facebook_ui
+# Facebook
 
-A new Flutter project.
+### A Responsive Facebook UI for Mobile and Web
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="800" alt="Web Mode" src="https://user-images.githubusercontent.com/82430454/195999793-3ed10c9f-b59c-40c5-9900-0633a338cccb.png">
+<table>
+  <tr>
+    <td>
+      <img width="1550" alt="Tablet Mode" src="https://user-images.githubusercontent.com/82430454/195999796-bf3d68e7-7607-4fdc-9f8a-a71e6efa33b7.png">
+    </td>
+    <td>
+      <img width="800" alt="Mobile Mode" src="https://user-images.githubusercontent.com/82430454/195999798-6ee58ed5-aa95-42ec-bae3-3700d7f7e2bb.png">
+    </td>
+  </tr>
+</table>
