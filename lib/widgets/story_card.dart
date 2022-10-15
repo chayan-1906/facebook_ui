@@ -3,9 +3,8 @@ import 'package:facebook_ui/config/palette.dart';
 import 'package:facebook_ui/models/story_model.dart';
 import 'package:facebook_ui/models/user_model.dart';
 import 'package:facebook_ui/widgets/profile_avatar.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:facebook_ui/widgets/responsive.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class StoryCard extends StatelessWidget {
   final bool isAddStory;
@@ -38,6 +37,15 @@ class StoryCard extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: Palette.storyGradient,
             borderRadius: BorderRadius.circular(12.0),
+            boxShadow: Responsive.isDesktop(context)
+                ? [
+                    const BoxShadow(
+                      color: Colors.black26,
+                      offset: Offset(0, 2),
+                      blurRadius: 4.0,
+                    ),
+                  ]
+                : null,
           ),
         ),
         Positioned(
